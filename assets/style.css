@@ -1,0 +1,123 @@
+/* Formatação Geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: rgb(255, 255, 255);
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contatos button{
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    background: #FFF;
+    color: #C73EEE;
+    border-color: #C73EEE;
+    transition: .2s;
+}
+
+/* Cabeçalho */
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*O máximo possível distante do outro*/
+}
+
+#logo img{
+    width: 60px;
+}
+
+header a{
+    text-decoration: none;
+    color: #C73EEE;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #e38ffb;
+    transform: scale(1.05); /*Para da zoom*/
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline;
+    padding: 0 20px;
+}
+
+
+.btn-contatos button:hover{
+    box-shadow: 0px 0px 8px #c83eee62;
+    transform: scale(1.05);
+}
+
+/* ----- Main------ */
+/* Topo do site */
+main .img-topo-site img{
+    width: 300px;
+    border-radius: 60px 20px;
+    box-shadow: 0px 0px 20px #c83eee62;
+}
+
+section.topo-site{
+    padding: 40px 4%;
+}
+
+section.topo-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+.topo-site .txt-topo-site h1{
+    font-size: 30px;
+}
+
+.topo-site .txt-topo-site p{
+    margin: 30px 0;
+}
+
+/* Aplicando animação na imagem Perfil*/
+@keyframes flutuacao{
+    /* Quando estiver em 0% a distância do topo será 0 */
+    0%{
+        top: 0;
+    }
+    /* Quando estiver em 100%, ou sej,a finalizando a distância do topo será 30px */
+    100%{
+        top: 30px;
+    }
+}
+
+/* A animação só funciona se o position estiver diferente de absolute */
+.topo-site .img-topo-site img{
+    position: relative;
+    animation: flutuacao 2s ease-in-out infinite alternate; /*Chama a animação, define velocidade, vai comecar suava e termina suave, ficar infinitamente funcionando, vai ficar alternando*/
+}
+
+
+
+
