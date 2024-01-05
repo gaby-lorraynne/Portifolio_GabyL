@@ -33,6 +33,12 @@ body{
     margin-bottom: 5px;
 }
 
+h2.title{
+    color: #FFF;
+    font-size: 35px;
+    text-align: center;
+}
+
 /* Cabeçalho */
 header{
     padding: 40px 4%;
@@ -119,6 +125,42 @@ section.topo-site .flex{
     position: relative;
     animation: flutuacao 2s ease-in-out infinite alternate; /*Chama a animação, define velocidade, vai comecar suava e termina suave, ficar infinitamente funcionando, vai ficar alternando*/
 }
+
+/* Section Especialidade */
+section.especialidade{
+    margin-top: 20px;
+    padding: 40px 4%;
+    background: #C73EEE;
+}
+
+section.especialidade .flex{
+    gap: 60px;
+}
+
+.especialidade .box{
+    color: #FFF;
+    width: 250px;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.especialidade .box:hover{
+    transform: scale(1.05);
+    box-shadow:  0 0 20px #ffffff76;
+}
+
+.especialidade .box i{
+    font-size: 50px;
+    color: black;
+}
+
+.especialidade .box h3{
+    font-size: 22px;
+    margin: 15px 0;
+}
+
 
 
 
