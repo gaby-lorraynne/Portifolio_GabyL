@@ -24,7 +24,7 @@ body{
     padding: 10px 20px;
     border-radius: 100px;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 600; /*Peso da fonte*/
     cursor: pointer;
     background: #FFF;
     color: #C73EEE;
@@ -51,7 +51,7 @@ header > .interface{
 header a{
     text-decoration: none;
     color: #C73EEE;
-    display: inline-block;
+    display: inline-block; /*Se for apenas inline ele não vai receber a transição*/
     transition: .2s;
 }
 
@@ -73,6 +73,7 @@ header nav ul li{
 .btn-contatos button:hover{
     box-shadow: 0px 0px 8px #c83eee62;
     transform: scale(1.05);
+    color: #e38ffb;
 }
 
 /* ----- Main------ */
@@ -80,7 +81,7 @@ header nav ul li{
 main .img-topo-site img{
     width: 300px;
     border-radius: 60px 20px;
-    box-shadow: 0px 0px 20px #c83eee62;
+    box-shadow: 0px 0px 20px #c83eee62; 
 }
 
 section.topo-site{
