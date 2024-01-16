@@ -222,18 +222,97 @@ section.projetos h2{
     opacity: 1;
 }
 
-/* Section certificações */
-section.certificacoes{
+/* Section Conquistas */
+section.conquistas{
     margin-top: 20px;
     padding: 40px 4%;
     background: #C73EEE;
     box-shadow: 0 0 40px 10px #ffffffb7;
 }
 
-.certificacoes .img-certificados img{
-    width: 300px;
-    margin: 20px 10px;
-    border-radius: 40px;
+.conquistas .img-conquistas{
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+.conquistas .img-conquistas img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* Deixando o site responsivo */
+@media screen and (max-width: 1098px){
+    /* Classes gerais */
+    .flex{
+        /* Inverte para coluna */
+        flex-direction: column;
+    }
+
+    .topo-site .flex{
+        /* Inverte a ordem do texto com a imagem */
+        flex-direction: column-reverse;
+    }
+
+    h2.title{
+        font-size: 30px;
+    }
+
+    /* Cabeçalho */
+    .menu-desktop, .btn-contatos{
+        display: none;
+    }
+
+    /* Topo do site - titulo */
+    section.topo-site{
+        padding:20px 8%;
+    }
+
+    .topo-site .txt-topo-site h1{
+        font-size: 20px;
+    }
+
+    .topo-site .img-topo-site img{
+        width: 100%;
+    }
+
+    section.topo-site .flex{
+        gap: 40px;
+    }
+
+    /* Especialidades */
+    section.especialidade{
+        padding: 40px 8%;
+    }
+
+    /* Projetos */
+    section.projetos{
+        padding: 80px 8%;
+    }
+
+    .img-projetos{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.projetos .flex{
+        gap: 60px;
+    }
+    
+
+}
+
+@media screen and (max-width: 1103px){
+    section.especialidade{
+        columns: 2;
+    }
+}
+
+@media screen and (max-width: 531px){
+    section.especialidade{
+        columns: 1;
+    }
 }
 
 
