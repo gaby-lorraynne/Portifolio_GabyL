@@ -61,7 +61,7 @@ header a{
     transition: .2s;
 }
 
-header a:hover{
+header nav.menu-desktop a:hover{
     color: #e38ffb;
     transform: scale(1.05); /*Para da zoom*/
 }
@@ -76,8 +76,8 @@ header nav ul{
     list-style-type: none;
 }
 
-header nav ul li{
-    display: inline;
+header nav.menu-desktop ul li{
+    display: inline-block;
     padding: 0 20px;
 }
 
@@ -86,6 +86,69 @@ header nav ul li{
     box-shadow: 0px 0px 8px #c83eee62;
     transform: scale(1.05);
     color: #e38ffb;
+}
+
+/* Menu Mobile */
+.btn-open i{
+    color: #C73EEE;
+    font-size: 40px;
+}
+
+.menu-mobile{
+    background-color: #C73EEE;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    width: 0%;
+    overflow: hidden;/*Para garantir que nenhum elemento fique do lado de fora*/
+    transition: .4s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: flex;
+}
+
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: #e38ffb;
+    color: #000;
+}
+
+.menu-mobile .btn-close{
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-close i{
+    color: #FFF;
+    font-size: 30px;
+}
+
+.overlay-menu{
+    background-color: #00000000;
+    width: 70%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 88888;
+    display: none;
 }
 
 /* ----- Main------ */
