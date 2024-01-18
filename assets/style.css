@@ -305,7 +305,7 @@ section.conquistas{
 }
 
 /* Deixando o site responsivo */
-@media screen and (max-width: 1098px){
+@media screen and (max-width: 1080px){
     /* Classes gerais */
     .flex{
         /* Inverte para coluna */
@@ -378,6 +378,13 @@ section.conquistas{
     }
 }
 
+@media screen and (min-width: 1081px){
+    .btn-open{
+        display: none;
+    }
+}
+
+    
 
 
 
