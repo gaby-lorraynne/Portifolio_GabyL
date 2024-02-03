@@ -8,7 +8,7 @@
 
 body{
     height: 100vh;
-    background: rgb(255, 255, 255);
+    background: var(--background-body);
 }
 
 .interface{
@@ -26,15 +26,15 @@ body{
     font-size: 18px;
     font-weight: 600; /*Peso da fonte*/
     cursor: pointer;
-    background: #FFF;
-    color: #C73EEE;
-    border-color: #C73EEE;
+    background: var(--color-white);
+    color: var(--color-principal);
+    border-color: var(--color-principal);
     transition: .2s;
     margin-bottom: 5px;
 }
 
 h2.title{
-    color: #FFF;
+    color: var(--color-white);
     font-size: 35px;
     text-align: center;
 }
@@ -56,13 +56,13 @@ header > .interface{
 
 header a{
     text-decoration: none;
-    color: #C73EEE;
+    color: var(--color-principal);
     display: inline-block; /*Se for apenas inline ele não vai receber a transição*/
     transition: .2s;
 }
 
 header nav.menu-desktop a:hover{
-    color: #e38ffb;
+    color: var(--color-hover-link);
     transform: scale(1.05); /*Para da zoom*/
 }
 
@@ -83,19 +83,19 @@ header nav.menu-desktop ul li{
 
 
 .btn-contatos button:hover{
-    box-shadow: 0px 0px 8px #c83eee62;
+    box-shadow: 0px 0px 8px var(--color-hover-box);
     transform: scale(1.05);
-    color: #e38ffb;
+    color: var(--color-hover-link);
 }
 
 /* Menu Mobile */
 .btn-open i{
-    color: #C73EEE;
+    color: var(--color-principal);
     font-size: 40px;
 }
 
 .menu-mobile{
-    background-color: #C73EEE;
+    background-color: var(--color-principal);
     height: 100vh;
     position: fixed;
     top: 0;
@@ -120,7 +120,7 @@ header nav.menu-desktop ul li{
 }
 
 .menu-mobile nav ul li a{
-    color: #FFF;
+    color: var(--color-white);
     font-size: 20px;
     font-weight: 300;
     padding: 20px 8%;
@@ -128,8 +128,8 @@ header nav.menu-desktop ul li{
 }
 
 .menu-mobile nav ul li a:hover{
-    background-color: #e38ffb;
-    color: #000;
+    background-color: var(--color-hover-link);
+    color: var(--color-black);
 }
 
 .menu-mobile .btn-close{
@@ -137,12 +137,12 @@ header nav.menu-desktop ul li{
 }
 
 .menu-mobile .btn-close i{
-    color: #FFF;
+    color: var(--color-white);
     font-size: 30px;
 }
 
 .overlay-menu{
-    background-color: #00000000;
+    background-color: var(--color-black);
     width: 70%;
     height: 100%;
     position: fixed;
@@ -156,7 +156,7 @@ header nav.menu-desktop ul li{
 main .img-topo-site img{
     width: 300px;
     border-radius: 60px 20px;
-    box-shadow: 0px 0px 20px #c83eee62; 
+    box-shadow: 0px 0px 20px var(--color-hover-box); 
 }
 
 section.topo-site{
@@ -199,7 +199,7 @@ section.topo-site .flex{
 section.especialidade{
     margin-top: 20px;
     padding: 40px 4%;
-    background: #C73EEE;
+    background: var(--color-principal);
 }
 
 section.especialidade .flex{
@@ -207,7 +207,7 @@ section.especialidade .flex{
 }
 
 .especialidade .box{
-    color: #FFF;
+    color: var(--color-white);
     width: 250px;
     padding: 30px;
     margin-top: 40px;
@@ -217,12 +217,12 @@ section.especialidade .flex{
 
 .especialidade .box:hover{
     transform: scale(1.05);
-    box-shadow:  0 0 20px #ffffff76;
+    box-shadow:  0 0 20px var(--color-white)fff76;
 }
 
 .especialidade .box i{
     font-size: 50px;
-    color: black;
+    color: var(--color-black);
 }
 
 .especialidade .box h3{
@@ -232,9 +232,9 @@ section.especialidade .flex{
 
 /* Section projetos */
 section.projetos{
-    background: rgb(255, 255, 255);
+    background:  var(--background-body);
     padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #ffffffb7;
+    box-shadow: 0 0 40px 10px var(--color-white);
 }
 
 section.projetos .flex{
@@ -251,16 +251,16 @@ section.projetos .flex{
     cursor: pointer;
     border-radius: 40px;
     position: relative;
-    border: 1px solid #e48ffb42;
+    border: 1px solid var(--color-border-projetos);
 }
 
 .img-projetos:hover{
     background-position: 100% 100%;
-    box-shadow: 0px 0px 20px #c83eee62; 
+    box-shadow: 0px 0px 20px var(--color-hover-box); 
 }
 
 section.projetos h2{
-    color: #C73EEE;
+    color: var(--color-principal);
 }
 
 .overlay{
@@ -269,14 +269,14 @@ section.projetos h2{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #0000003e;
+    background: var(--color-black)0003e;
     border-radius: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 24px;
     font-weight: 600;
-    color: #FFF;
+    color: var(--color-white);
     opacity: 0;
     transition: .5s;
 }
@@ -289,8 +289,8 @@ section.projetos h2{
 section.conquistas{
     margin-top: 20px;
     padding: 40px 4%;
-    background: #C73EEE;
-    box-shadow: 0 0 40px 10px #ffffffb7;
+    background: var(--color-principal);
+    box-shadow: 0 0 40px 10px var(--color-white);
 }
 
 .conquistas .img-conquistas{
