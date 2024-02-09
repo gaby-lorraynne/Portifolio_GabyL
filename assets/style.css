@@ -24,7 +24,7 @@ body{
     padding: 10px 20px;
     border-radius: 100px;
     font-size: 18px;
-    font-weight: 600; /*Peso da fonte*/
+    font-weight: 600; 
     cursor: pointer;
     background: var(--color-white);
     color: var(--color-principal);
@@ -206,6 +206,7 @@ section.especialidade .flex{
     gap: 60px;
 }
 
+
 .especialidade .box{
     color: var(--color-white);
     width: 250px;
@@ -217,7 +218,7 @@ section.especialidade .flex{
 
 .especialidade .box:hover{
     transform: scale(1.05);
-    box-shadow:  0 0 20px var(--color-white)fff76;
+    box-shadow:  0 0 20px var(--color-white);
 }
 
 .especialidade .box i{
@@ -238,7 +239,8 @@ section.projetos{
 }
 
 section.projetos .flex{
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 60px;
 }
 
@@ -252,6 +254,7 @@ section.projetos .flex{
     border-radius: 40px;
     position: relative;
     border: 1px solid var(--color-border-projetos);
+    margin-bottom: 25px;
 }
 
 .img-projetos:hover{
@@ -269,7 +272,7 @@ section.projetos h2{
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--color-black);
+    background: var(--color-overlay);
     border-radius: 40px;
     display: flex;
     align-items: center;
