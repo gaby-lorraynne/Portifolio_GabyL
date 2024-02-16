@@ -296,6 +296,7 @@ section.conquistas{
     box-shadow: 0 0 40px 10px var(--color-white);
 }
 
+
 .conquistas .img-conquistas{
     margin-right: 20px;
     margin-top: 30px;
@@ -306,6 +307,22 @@ section.conquistas{
     height: 100%;
     border-radius: 5px;
 }
+
+/* Animações */
+.hidden{
+    opacity: 0;
+    filter: blur(15px); 
+    transform: translateX(-100%); 
+    transition: all 3s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 2s;
+}
+
 
 /* Deixando o site responsivo */
 @media screen and (max-width: 1080px){
