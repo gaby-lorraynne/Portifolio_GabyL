@@ -51,6 +51,7 @@ header > .interface{
     justify-content: space-between; /*O máximo possível distante do outro*/
 }
 
+
 #logo img{
     width: 60px;
 }
@@ -88,6 +89,7 @@ header nav.menu-desktop ul li{
     transform: scale(1.05);
     color: var(--color-hover-link);
 }
+
 
 /* Menu Mobile */
 .btn-open i{
