@@ -198,19 +198,19 @@ section.topo-site .flex{
     animation: flutuacao 2s ease-in-out infinite alternate; /*Chama a animação, define velocidade, vai comecar suava e termina suave, ficar infinitamente funcionando, vai ficar alternando*/
 }
 
-/* Section Especialidade */
-section.especialidade{
+/* Section Skills */
+section.skills{
     margin-top: 20px;
     padding: 40px 4%;
     background: var(--color-principal);
 }
 
-section.especialidade .flex{
+section.skills .flex{
     gap: 60px;
 }
 
 
-.especialidade .box{
+.skills .box{
     color: var(--color-white);
     width: 250px;
     padding: 30px;
@@ -219,20 +219,63 @@ section.especialidade .flex{
     transition: .2s;
 }
 
-.especialidade .box:hover{
+.skills .box:hover{
     transform: scale(1.05);
     box-shadow:  0 0 20px var(--color-white);
 }
 
-.especialidade .box i{
+.skills .box i{
     font-size: 50px;
     color: var(--color-black);
 }
 
-.especialidade .box h3{
+.skills .box h3{
     font-size: 22px;
     margin: 15px 0;
 }
+
+/* Section Hobbies */
+section.hobbies{
+    margin-top: 20px;
+    padding: 40px 4%;
+}
+
+section.hobbies .flex{
+    justify-content: space-between;
+    gap: 60px;
+}
+
+section.hobbies h2 {
+    color: var(--color-principal);
+    margin-bottom: 10px;
+}
+
+section.hobbies i {
+    font-size: 25px;
+}
+
+.hobbies .box{
+    width: 250px;
+    padding: 30px;
+    margin-top: 40px;
+    border: 3px solid;
+    border-image: linear-gradient(145deg, #ffd6f5ec 0, #f48ae4 10%, #ff4ced 20%, #ff4bf0 30%, #ff49ec 40%, #dc45e1 50%, #ac41d2 60%, #803ec4 70%, #694ed3 80%, #1739ad 90%, #0038a3 100%) 1;
+    transition: .2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.hobbies:hover .box:hover{
+    background-image: linear-gradient(145deg, #ff7ce9 0, #ff70eb 16.67%, #ff5de8 33.33%, #dc45e1 50%, #b42fda 66.67%, #8c27d7 83.33%, #6129d8 100%);
+    color: var(--color-white);
+    border-radius: 20px;
+    border: none;
+    transition: .7s;
+}
+
+
 
 /* Section projetos */
 section.projetos{
@@ -366,8 +409,13 @@ section.conquistas{
         gap: 40px;
     }
 
-    /* Especialidades */
-    section.especialidade{
+    /* Skills */
+    section.skills{
+        padding: 40px 8%;
+    }
+
+    /* Skills */
+    section.hobbies{
         padding: 40px 8%;
     }
 
@@ -390,13 +438,13 @@ section.conquistas{
 }
 
 @media screen and (max-width: 1103px){
-    section.especialidade{
+    section.skills, section.hobbies{
         columns: 2;
     }
 }
 
 @media screen and (max-width: 531px){
-    section.especialidade{
+    section.skills, section.hobbies{
         columns: 1;
     }
 }
