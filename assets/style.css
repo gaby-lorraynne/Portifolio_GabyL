@@ -245,26 +245,26 @@ section.hobbies .flex{
     gap: 60px;
 }
 
-section.hobbies h2 {
+.hobbies h2 {
     color: var(--color-principal);
     margin-bottom: 10px;
 }
 
-section.hobbies i {
+.hobbies i {
     font-size: 25px;
 }
 
 .hobbies .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     width: 250px;
     padding: 30px;
     margin-top: 40px;
     border: 3px solid;
     border-image: linear-gradient(145deg, #ffd6f5ec 0, #f48ae4 10%, #ff4ced 20%, #ff4bf0 30%, #ff49ec 40%, #dc45e1 50%, #ac41d2 60%, #803ec4 70%, #694ed3 80%, #1739ad 90%, #0038a3 100%) 1;
-    transition: .2s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    transition: .4s;
 }
 
 .hobbies:hover .box:hover{
@@ -371,7 +371,7 @@ section.conquistas{
 
 
 /* Deixando o site responsivo */
-@media screen and (max-width: 1080px){
+@media (max-width: 1080px){
     /* Classes gerais */
     .flex{
         /* Inverte para coluna */
@@ -414,9 +414,17 @@ section.conquistas{
         padding: 40px 8%;
     }
 
-    /* Skills */
+    section.skills .box {
+        margin: 0 auto;
+    }
+
+    /* Hobbies */
     section.hobbies{
         padding: 40px 8%;
+    }
+
+    section.hobbies .box{
+        margin: 0 auto;
     }
 
     /* Projetos */
@@ -437,19 +445,28 @@ section.conquistas{
 
 }
 
-@media screen and (max-width: 1103px){
+@media (min-width: 532px) and (max-width: 1103px){
     section.skills, section.hobbies{
         columns: 2;
     }
+
+    section.hobbies{
+        gap: 70px;
+    }
+
+    section.hobbies .box {
+        width: 100%;
+        white-space: nowrap;
+    }
 }
 
-@media screen and (max-width: 531px){
+@media (max-width: 531px){
     section.skills, section.hobbies{
         columns: 1;
     }
 }
 
-@media screen and (min-width: 1081px){
+@media (min-width: 1081px){
     .btn-open{
         display: none;
     }
