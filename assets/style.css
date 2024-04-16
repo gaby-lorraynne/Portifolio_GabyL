@@ -171,10 +171,11 @@ section.topo-site .flex{
     gap: 150px;
 }
 
+
 .topo-site .txt-topo-site h1{
-    font-size: 30px;
-    color: var(--color-black);
+    color: var(--color-principal);
 }
+
 
 .topo-site .txt-topo-site p{
     margin: 30px 0;
@@ -371,7 +372,7 @@ section.conquistas{
 
 
 /* Deixando o site responsivo */
-@media (max-width: 1080px){
+@media (max-width: 1102px){
     /* Classes gerais */
     .flex{
         /* Inverte para coluna */

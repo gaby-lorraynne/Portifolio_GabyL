@@ -35,4 +35,19 @@ const elements = document.querySelectorAll('.hidden');
 
 elements.forEach( (element) => myObserver.observe(element));
 
+// Saudações
+// Obter id da saudações
+const greetingElement = document.getElementById("greeting");
 
+// Obter horas do sistema
+const currentHour = new Date().getHours();
+
+// Verificar horas e mostrar mensagem
+const greetingMessage =
+  currentHour >= 5 && currentHour < 12
+    ? "Bom dia! Sou Gabrielly Lorraynne"
+    : currentHour >= 12 && currentHour < 18
+    ? "Boa tarde! Sou Gabrielly Lorraynne"
+    : "Boa noite! Sou Gabrielly Lorraynne";
+
+greetingElement.textContent = greetingMessage;
