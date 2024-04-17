@@ -365,6 +365,7 @@ section.contato{
 
 section.contato .flex{
     padding-top: 20px;
+    gap: 20px;
 }
 
 .contato h2 {
