@@ -69,8 +69,31 @@
     section.projetos .flex{
         gap: 60px;
     }
-    
 
+
+    /* Contato */
+    section.contato{
+        padding: 40px 8%; 
+        margin: 0 auto;
+    }
+    .contato span {
+        margin-top: 20px;
+    }
+
+    section.contato .flex{
+        gap: 20px;
+    }
+
+    .contato__formulario input, .contato__formulario textarea{
+        width: 680px;
+    }
+
+}
+
+@media (max-width: 783px){
+    .contato__formulario input, .contato__formulario textarea{
+        width: 480px;
+    }
 }
 
 @media (min-width: 532px) and (max-width: 1103px){
@@ -86,11 +109,16 @@
         width: 100%;
         white-space: nowrap;
     }
+
 }
 
 @media (max-width: 531px){
     section.skills, section.hobbies{
         columns: 1;
+    }
+
+    .contato__formulario input, .contato__formulario textarea{
+        width: 280px;
     }
 }
 
