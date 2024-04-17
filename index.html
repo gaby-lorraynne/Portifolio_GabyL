@@ -8,6 +8,9 @@
         <!-- Links CSS -->
         <link rel="stylesheet" href="assets/style.css">
         <link rel="stylesheet" href="assets/vars.css">
+        <link rel="stylesheet" href="assets/medias-queries.css">
+        
+        <link rel="stylesheet" href="thanks.html">
 
         <!-- Links JavaScript -->
         <script src="script.js" defer></script>
@@ -37,6 +40,7 @@
                         <li><a href="#hobbies">Hobbies</a></li>
                         <li><a href="#projetos">Projetos</a></li>
                         <li><a href="#conquistas">Conquistas</a></li>
+                        <li><a href="#contato">Contato</a></li>
                     </ul>
                 </nav>
 
@@ -62,6 +66,7 @@
                             <li><a href="#hobbies">Hobbies</a></li>
                             <li><a href="#projetos">Projetos</a></li>
                             <li><a href="#conquistas">Conquistas</a></li>
+                            <li><a href="#contato">Contato</a></li>
                             <li><a href="https://www.linkedin.com/in/gabrielly-lorraynne-de-almeida/" target="_blank">Linkedin</a></li>
                             <li><a href="https://github.com/gaby-lorraynne" target="_blank">GitHub</a></li>
                         </ul>
@@ -79,9 +84,9 @@
                             <h1 id="greeting"></h1>
                             <p>Prazer, seja bem vindo ao meu portifólio web. Sou <strong>Técnica em Informática</strong> pelo Instituto Federal de Educação, Ciência e Tecnologia de Rondônia e estudante do quinto período de <strong>Engenharia de Software</strong>. Sou encantada por tecnologia e quero ser uma <span style="color: #C73EEE;">Desenvolvedora Front-End</span>.</p>
 
-                            <div class="btn-contatos">
+                            <!-- <div class="btn-contatos">
                                 <a href="mailto:gabyalmeidacom@hotmail.com" target="_blank"><button>Contato</button></a>
-                            </div>
+                            </div> -->
                         </div>
 
                         <div class="img-topo-site">
@@ -176,6 +181,24 @@
                         <div class="img-conquistas hidden">
                             <img src="assets/imagens/certificado3.png" alt="">
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contato hidden" id="contato">
+                <div class="interface">
+                    <h2 class="title">Contato</h2>
+                    <div class="flex">
+                        <span>Quer entrar em contato comigo? <br> Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</span>
+
+                        <form action="https://formsubmit.co/gabyalmeidacom@hotmail.com" method="POST" class="contato__formulario">
+                            <input type="text"  name="name" placeholder="Nome" required>
+                            <input type="email"  name="email" placeholder="E-mail" required>
+                            <input type="assunto" name="assunto"  placeholder="Assunto" required>
+                            <textarea name="mensagem" id="mensagem" placeholder="Mensagem" required></textarea>
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500//thanks.html">
+                            <button type="submit">Enviar mensagem</button>
+                        </form>
                     </div>
                 </div>
             </section>
