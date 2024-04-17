@@ -438,7 +438,7 @@ section.contato .flex{
 }
 
 /* Animações */
-/* .hidden{
+.hidden{
     opacity: 0;
     filter: blur(15px); 
     transform: translateX(-100%); 
@@ -450,7 +450,7 @@ section.contato .flex{
     filter: blur(0);
     transform: translateX(0);
     transition: all 2s;
-} */
+}
 
 
     
