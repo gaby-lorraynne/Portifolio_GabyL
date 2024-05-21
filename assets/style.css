@@ -187,7 +187,7 @@ section.topo-site .flex{
     0%{
         top: 0;
     }
-    /* Quando estiver em 100%, ou sej,a finalizando a distância do topo será 30px */
+    /* Quando estiver em 100%, ou seja, finalizando a distância do topo será 30px */
     100%{
         top: 30px;
     }
@@ -388,12 +388,14 @@ section.contato .flex{
     width: 600px;
     height: 56px;
     border-radius: 10px;
+    padding-left: 10px;
 }
 
 .contato__formulario textarea {
     width: 600px;
     height: 200px;
     resize: none;
+    padding: 10px;
 }
 
 .contato__formulario input:focus, textarea:focus{
@@ -406,7 +408,7 @@ section.contato .flex{
 
 .contato__formulario input, textarea {
     border: 1px solid var(--color-white);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.61) 0px 3px 8px;
 }
 
 .contato__formulario button {
@@ -426,6 +428,19 @@ section.contato .flex{
     color: var(--color-hover-link);
 }
 
+.mensagem-erro{
+    color: var(--mensagem-erro);
+}
+
+.contato__formulario__btn{
+    display: flex;
+}
+
+.contato__formulario>div{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
 
 .agradecimento{
     flex-direction: column;
