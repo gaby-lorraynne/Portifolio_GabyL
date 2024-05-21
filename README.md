@@ -1,5 +1,12 @@
-# Portifólio em mudanças
+<p align="center"> <img src="assets/imagens/pagInicial.png" alt="Portifólio Web"> </p>
 
-### Esse portifólio passará por mudanças a fim de inserir novos conhecimentos adquiridos.
+<hr>
+
+## Tecnologias utilizadas no projeto
+* HTML
+* CSS
+* JavaScript
+
+
 
 
