@@ -83,8 +83,11 @@
     }
 
     section.conquistas .flex .img-conquistas{
+        max-width: 350px;
+        width: 100%;
         margin: 0 auto;
     }
+
 
 
     /* Contato */
