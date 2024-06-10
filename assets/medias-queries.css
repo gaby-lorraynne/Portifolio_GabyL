@@ -67,7 +67,23 @@
     }
 
     section.projetos .flex{
-        gap: 60px;
+        gap: 80px;
+        margin: 0 auto;
+    }
+
+    /* Conquistas */
+    section.conquistas{
+        padding: 80px 8%;
+        margin: 0 auto;
+    }
+
+
+    section.conquistas .flex{
+        margin: 0 auto;
+    }
+
+    section.conquistas .flex .img-conquistas{
+        margin: 0 auto;
     }
 
 
@@ -120,6 +136,7 @@
     .contato__formulario input, .contato__formulario textarea{
         width: 280px;
     }
+    
 }
 
 @media (min-width: 1081px){
